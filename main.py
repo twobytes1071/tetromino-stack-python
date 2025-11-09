@@ -26,7 +26,7 @@ def main():
 			continue_playing = False
 		
 def welcome():
-    input("Welcome to Tetronimo Stack!\n\nBlocky pieces will fall from the top, and the goal is to stack them as neatly as possible. Every complete row will disappear to make room for more blocks.\
+    input("Welcome to Tetronimo Stack!\n\nBlocky pieces will fall from the top, and the goal is to stack them as neatly as possible. Every complete row will disappear to make room for more blocks. \
 The game ends when the blocks stack too high; keep them below the line!\n\n\
 Scoring:\nSingle row clear:     10 points\nDouble row clear:     40 points\nTriple row clear:     90 points\nQuadruple row clear:  160 points\n\n\
 Controls:\n[A]:      Move left\n[D]:      Move right\n[Q]:      Rotate counterclockwise\n[E]:      Rotate clockwise\n[S]:      Drop to bottom\n[ENTER]:  Drop one space\n\n\
