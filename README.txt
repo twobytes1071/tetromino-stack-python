@@ -1,1 +1,1 @@
-Tetromino Stack is a command line video game based on the popular game Tetris.
+Tetromino Stack Python is a console-based video game based on the popular game Tetris. It is written in Python.
