@@ -24,7 +24,8 @@ def main():
 		user_choice = user_input("Press [ENTER] to play again. Type 'quit' to exit. ", ("", "quit"))
 		if user_choice == "quit":
 			continue_playing = False
-		
+
+# displays a welcome message, continuing after user input
 def welcome():
     input("Welcome to Tetronimo Stack!\n\nBlocky pieces will fall from the top, and the goal is to stack them as neatly as possible. Every complete row will disappear to make room for more blocks. \
 The game ends when the blocks stack too high; keep them below the line!\n\n\
@@ -32,16 +33,19 @@ Scoring:\nSingle row clear:     10 points\nDouble row clear:     40 points\nTrip
 Controls:\n[A]:      Move left\n[D]:      Move right\n[Q]:      Rotate counterclockwise\n[E]:      Rotate clockwise\n[S]:      Drop to bottom\n[ENTER]:  Drop one space\n\n\
 Press [ENTER] to start. ")
 
+# clears the console screen by displaying new lines
 def clear_screen():
 	for _ in range(30):
 		print()
 
+# gets user input, enforcing specific choices
 def user_input(message, valid_user_inputs):
 	user_input = input(message)
 	while user_input not in valid_user_inputs:
 		user_input = input(message)
 	return user_input
 
+# gets the last character of user input, enforcing specific choices
 def game_input(message, valid_user_inputs):
 	user_input = input(message)
 	if len(user_input) >= 1:
